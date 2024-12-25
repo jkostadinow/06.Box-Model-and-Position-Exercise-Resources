@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+img{
+    display: block;
+    height: auto;
+    width: 100%;
+
+}
+
+.card{
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1em 0.5em rgb(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.card::before{
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 5em 0.5em rgb(0, 0, 0, 0.7) inset;
+}
+
+.card svg{
+    display: block;
+    width: 2em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    fill: #ccc;
+}
+
+.viewport{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.viewport:nth-child(1){
+    background-image: rgb(2,0,36);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(157,62,219,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.viewport:nth-child(2){
+    background-image: rgb(2,0,36);
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,143,77,0.9920343137254902) 35%, rgba(0,212,255,1) 100%);
+}
+
